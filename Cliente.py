@@ -6,7 +6,7 @@ class CCliente:
             cone = CConexion.ConectorBaseDatos()
             cursor = cone.cursor()
             sql = "INSERT INTO usuario VALUES (NULL, %s, %s, %s);"
-
+            #Nuevo cambio
             # La variable 'valores' tiene que ser una tupla -> array que no se puede modificar
             # Como mínima expresión es: (valor,) la coma hace que sea una tupla
             # Las tuplas son listas inmutables, eso quiere decir que no se pueden modificar
@@ -18,3 +18,4 @@ class CCliente:
 
         except mysql.connector.Error as error:
             print("error al ingresar datos {}".format(error))
+git 
